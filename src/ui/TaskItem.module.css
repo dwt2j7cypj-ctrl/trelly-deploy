@@ -1,0 +1,28 @@
+.task {
+    border: 3px solid black;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: white;
+}
+
+.selected {
+    border: 3px solid blue;
+}
+
+.lowPriority {
+    background-color: #ffd7b5;    
+}
+.mediumPriority {
+    background-color: #ffb38a;
+}
+.highPriority {
+    background-color: #ff9248;
+}
+.highestPriority {
+    background-color: #ff6700;
+}
+
+.doneTask {
+    text-decoration: line-through;
+}
