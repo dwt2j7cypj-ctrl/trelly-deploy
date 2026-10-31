@@ -36,7 +36,7 @@ function TaskList({onTaskSelect, selectedTaskId}: Props) {
                       <TaskItem key={task.id}
                                 task={task}
                                 isSelected = {task.id === selectedTaskId}
-                                handleClick={()=>handleClick(task.id, task.attributes.boardId )}/>
+                                handleClick={()=>handleClick(task.id, task.relationships.board.data.id )}/>
                      )
                   }
                 )

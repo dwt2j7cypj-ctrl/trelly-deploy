@@ -13,6 +13,7 @@ export function useTaskDetails (selectedTaskId: string | null, boardId: string |
       return
     }
               // getFakeTask(selectedTaskId, boardId)
+              console.log(boardId)
               getTask(selectedTaskId, boardId)
                 .then((json) => setTaskDetails(json.data))
   },[selectedTaskId])

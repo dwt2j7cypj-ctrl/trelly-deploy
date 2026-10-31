@@ -26,7 +26,7 @@ function TaskItem({task, isSelected, handleClick}: Props){
     })
 
     return <li key={task.id} className={taskClassName} 
-        onClick={() => handleClick(task.id, task.attributes.boardId)}>
+        onClick={() => handleClick(task.id, task.relationships.board.data.id)}>
         <div 
             className={titleClassName}>
             {task.attributes.title}
